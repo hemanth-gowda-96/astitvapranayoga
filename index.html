@@ -329,12 +329,45 @@
           return slider.clientWidth || 0;
         }
 
+        function maxScrollLeft() {
+          return Math.max(slider.scrollWidth - slider.clientWidth, 0);
+        }
+
+        function scrollToNext() {
+          const amount = scrollAmount();
+          const max = maxScrollLeft();
+          let target = slider.scrollLeft + amount;
+          if (target > max - 8) {
+            target = 0;
+          }
+          slider.scrollTo({ left: target, behavior: "smooth" });
+        }
+
+        function scrollToPrev() {
+          const amount = scrollAmount();
+          const max = maxScrollLeft();
+          let target = slider.scrollLeft - amount;
+          if (target < 0) {
+            target = max;
+          }
+          slider.scrollTo({ left: target, behavior: "smooth" });
+        }
+
+        let autoTimer = setInterval(scrollToNext, 9000);
+
+        function resetAuto() {
+          clearInterval(autoTimer);
+          autoTimer = setInterval(scrollToNext, 9000);
+        }
+
         prev.addEventListener("click", function () {
-          slider.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+          scrollToPrev();
+          resetAuto();
         });
 
         next.addEventListener("click", function () {
-          slider.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+          scrollToNext();
+          resetAuto();
         });
       })();
     </script>
