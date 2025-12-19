@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -19,54 +19,50 @@
   <body>
     <header class="hero" id="home">
       <div class="hero-slider">
-        <!-- Replace these URLs with your own images later -->
-        <div
-          class="hero-slide hero-slide-1"
-          aria-hidden="true"
-        ></div>
-        <div
-          class="hero-slide hero-slide-2"
-          aria-hidden="true"
-        ></div>
-        <div
-          class="hero-slide hero-slide-3"
-          aria-hidden="true"
-        ></div>
+        <div class="hero-slide hero-slide-1" aria-hidden="true"></div>
+        <div class="hero-slide hero-slide-2" aria-hidden="true"></div>
+        <div class="hero-slide hero-slide-3" aria-hidden="true"></div>
       </div>
       <div class="hero-overlay">
         <nav class="nav">
           <div class="brand">
-            <img
-              src="assets/logo_bg_removed.png"
-              alt="Astitva Prana Yoga Shala logo"
-              width="72"
-              height="72"
-            />
+            <div class="brand-logo">
+              <img
+                src="assets/logo_bg_removed.png"
+                alt="Astitva Prana Yoga Shala"
+                width="40"
+                height="40"
+              />
+            </div>
+            <span class="nav-title">Astitva Prana</span>
           </div>
-          <div class="nav-title">Astitva Prana Yoga Shala</div>
           <div class="nav-links">
             <a href="#about">About</a>
             <a href="#offerings">Offerings</a>
             <a href="#schedule">Schedule</a>
             <a href="#testimonials">Testimonials</a>
-            <a href="#contact" class="btn-pill">Join a Class</a>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="padding: 0.8rem 1.5rem; font-size: 0.8rem"
+              >Join Us</a
+            >
           </div>
         </nav>
         <section class="hero-content">
           <p class="eyebrow">Mysuru · Karnataka</p>
-          <h1>Reconnect with the breath, awaken prana, live with purpose.</h1>
+          <h1>Reconnect with the breath, awaken prana.</h1>
           <p class="intro">
-            I’m Hemanth, a yoga instructor with over 10 years of experience
-            guiding practitioners through traditional Mysuru-style sequences,
-            pranayama, and restorative practices.
+            Traditional Mysuru-style yoga, pranayama, and restorative practices
+            guided by a decade of experience and deep lineage.
           </p>
           <div class="hero-cta">
-            <a href="#contact" class="btn-primary">Book a Discovery Session</a>
+            <a href="#contact" class="btn-primary">Book a Session</a>
             <a href="#offerings" class="btn-secondary">Explore Offerings</a>
           </div>
         </section>
         <div class="hero-dots" aria-hidden="true">
-          <span class="dot"></span>
+          <span class="dot active"></span>
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
@@ -75,48 +71,39 @@
 
     <main>
       <section class="about" id="about">
-        <div class="section-header">
-          <p class="eyebrow">About the shala</p>
-          <h2>Grounded in Mysuru tradition, shaped by modern practitioners</h2>
-        </div>
         <div class="about-layout">
           <div class="about-gallery" aria-hidden="true">
             <div class="about-photo about-photo-main"></div>
-            <div class="about-photo about-photo-side about-photo-side-1"></div>
-            <div class="about-photo about-photo-side about-photo-side-2"></div>
+            <div class="about-photo about-photo-side-1"></div>
           </div>
           <div class="about-copy">
+            <p class="eyebrow" style="text-align: left">About the Shala</p>
+            <h2>Grounded in tradition, shaped for today.</h2>
             <p class="about-intro">
-              Astitva Prana Yoga Shala is a dedicated practice space in Mysuru,
-              Karnataka, offering thoughtfully structured classes that honour
-              traditional sequencing while respecting the needs of today’s
-              bodies and lifestyles.
+              Astitva Prana Yoga Shala is a sanctuary in Mysuru dedicated to the
+              art of conscious movement and breath.
             </p>
             <p>
-              Led by Hemanth, a teacher with more than a decade of experience,
-              each session weaves together alignment-based asana, pranayama, and
-              simple meditation to cultivate clarity, resilience, and
-              steadiness. Students are welcomed at every stage of practice, from
-              first-timers to long-term practitioners refining their craft.
+              Led by Hemanth, our practice honors the traditional Mysuru lineage
+              while adapting to the needs of modern bodies. We focus on
+              sustainability, precision, and the quiet power of consistency.
             </p>
+
             <div class="about-points">
-              <div>
-                <h3>What guides our work</h3>
-                <ul>
-                  <li>Personalized attention in intentionally small groups</li>
-                  <li>Clear, progressive teaching rooted in Mysuru lineage</li>
-                  <li>Careful support around injury, fatigue, and burnout</li>
-                  <li>Space that encourages curiosity, humility, and joy</li>
-                </ul>
-              </div>
-              <div class="about-highlight">
-                <p>
-                  “My intention is to help you build a practice that feels
-                  sustainable—one that supports your life, not the other way
-                  around.”
-                </p>
-                <span>— Hemanth, Founder & Lead Teacher</span>
-              </div>
+              <ul>
+                <li>Intentional small-group classes for personal guidance</li>
+                <li>Progressive teaching rooted in traditional lineage</li>
+                <li>Support for therapeutic goals and injury recovery</li>
+                <li>A space for curiosity, humility, and inner steadiness</li>
+              </ul>
+            </div>
+
+            <div class="about-highlight">
+              <p>
+                “Practice is not about doing the pose—it’s about about who you
+                become while doing it.”
+              </p>
+              <span>— Hemanth, Founder & Lead Teacher</span>
             </div>
           </div>
         </div>
@@ -125,24 +112,76 @@
       <section class="metrics">
         <div class="metrics-inner">
           <article class="metric-stat">
-            <p class="metric-number">300+</p>
-            <p class="metric-label">Happy practitioners</p>
+            <div class="metric-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="metric-info">
+              <p class="metric-number">300+</p>
+              <p class="metric-label">Practitioners</p>
+            </div>
           </article>
           <article class="metric-stat">
-            <p class="metric-number">10+</p>
-            <p class="metric-label">Years of experience</p>
+            <div class="metric-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="metric-info">
+              <p class="metric-number">10+</p>
+              <p class="metric-label">Years Experience</p>
+            </div>
           </article>
           <article class="metric-stat">
-            <p class="metric-number">3</p>
-            <p class="metric-label">Core paths to practice</p>
+            <div class="metric-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M22 10v6M2 10v6M12 2v20M12 2l-4 4M12 2l4 4M12 22l-4-4M12 22l4-4"
+                ></path>
+              </svg>
+            </div>
+            <div class="metric-info">
+              <p class="metric-number">3</p>
+              <p class="metric-label">Core Paths</p>
+            </div>
           </article>
           <article class="metric-stat">
-            <p class="metric-number">1:1</p>
-            <p class="metric-label">Personalised coaching</p>
-          </article>
-          <article class="metric-stat">
-            <p class="metric-number">∞</p>
-            <p class="metric-label">Space to keep exploring</p>
+            <div class="metric-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.94-8.94 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                ></path>
+              </svg>
+            </div>
+            <div class="metric-info">
+              <p class="metric-number">1:1</p>
+              <p class="metric-label">Personalized Care</p>
+            </div>
           </article>
         </div>
       </section>
@@ -150,56 +189,85 @@
       <section class="offerings" id="offerings">
         <div class="section-header">
           <p class="eyebrow">Offerings</p>
-          <h2>Paths to meet you where you are</h2>
+          <h2>Ways to Practice</h2>
         </div>
         <div class="card-grid">
           <article class="card">
-            <h3>Mysuru-Style Led Classes</h3>
+            <span class="tag">Group · 90 mins</span>
+            <h3>Mysuru-Style Led</h3>
             <p>
-              Guided primary series sequencing with breath cues and adjustments
-              to deepen awareness.
+              Traditional primary series sequencing with focus on drishti,
+              bandhas, and rhythmic breathing.
             </p>
-            <span class="tag">Group · 75 mins</span>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="
+                align-self: flex-start;
+                padding: 0.8rem 1.5rem;
+                font-size: 0.75rem;
+              "
+              >Join Class</a
+            >
           </article>
           <article class="card">
-            <h3>Private 1:1 Coaching</h3>
+            <span class="tag">Private · 60 mins</span>
+            <h3>Personal Coaching</h3>
             <p>
-              Tailored sessions for therapeutic goals, injury support, or
-              advancing personal practice.
+              Deepen your practice with one-on-one sessions tailored to your
+              physical needs and spiritual goals.
             </p>
-            <span class="tag">Custom · 60 mins</span>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="
+                align-self: flex-start;
+                padding: 0.8rem 1.5rem;
+                font-size: 0.75rem;
+              "
+              >Book 1:1</a
+            >
           </article>
           <article class="card">
-            <h3>Breath & Meditation Immersions</h3>
-            <p>
-              Focused pranayama labs and contemplative practices to regulate the
-              nervous system.
-            </p>
             <span class="tag">Weekend · 2 hours</span>
+            <h3>Pranayama Lab</h3>
+            <p>
+              Focused breathwork and meditation to regulate the nervous system
+              and cultivate mental clarity.
+            </p>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="
+                align-self: flex-start;
+                padding: 0.8rem 1.5rem;
+                font-size: 0.75rem;
+              "
+              >Explore</a
+            >
           </article>
         </div>
       </section>
 
       <section class="schedule" id="schedule">
-      <section class="schedule" id="schedule">
         <div class="section-header">
-          <p class="eyebrow">Weekly rhythm</p>
-          <h2>Practice with consistency</h2>
+          <p class="eyebrow">Weekly Rhythm</p>
+          <h2>A Routine for Growth</h2>
         </div>
         <div class="schedule-grid">
           <div>
             <h3>Morning Mysuru</h3>
-            <p>Monday · Wednesday · Friday</p>
+            <p>Mon · Wed · Fri</p>
             <p class="time">6:00 – 7:30 AM</p>
           </div>
           <div>
             <h3>Evening Restore</h3>
-            <p>Tuesday · Thursday</p>
+            <p>Tue · Thu</p>
             <p class="time">6:00 – 7:00 PM</p>
           </div>
           <div>
             <h3>Weekend Intensives</h3>
-            <p>Every 2nd Saturday</p>
+            <p>2nd Saturdays</p>
             <p class="time">8:00 – 10:00 AM</p>
           </div>
         </div>
@@ -207,8 +275,8 @@
 
       <section class="testimonials" id="testimonials">
         <div class="section-header">
-          <p class="eyebrow">Student voices</p>
-          <h2>Stories of grounding and growth</h2>
+          <p class="eyebrow">Student Voices</p>
+          <h2>Stories of Growth</h2>
         </div>
         <div class="testimonial-slider">
           <div class="testimonial-track">
@@ -252,33 +320,20 @@
                 support through periods of stress and burnout.”
               </p>
             </article>
-            <article class="testimonial-card">
-              <div class="testimonial-header">
-                <div class="testimonial-avatar avatar-4"></div>
-                <div>
-                  <h3>Arjun</h3>
-                  <p class="role">Software Engineer · Remote</p>
-                </div>
-              </div>
-              <p class="testimonial-text">
-                “Online sessions still feel personal and grounded. The rhythm of
-                the practice has helped me create healthier routines.”
-              </p>
-            </article>
           </div>
         </div>
         <div class="testimonial-controls">
           <button
             class="testimonial-arrow prev"
             type="button"
-            aria-label="Previous testimonials"
+            aria-label="Previous"
           >
             ‹
           </button>
           <button
             class="testimonial-arrow next"
             type="button"
-            aria-label="Next testimonials"
+            aria-label="Next"
           >
             ›
           </button>
@@ -286,32 +341,26 @@
       </section>
 
       <section class="contact" id="contact">
-        <div class="section-header">
-          <p class="eyebrow">Start today</p>
-          <h2>Ready to explore your practice?</h2>
-        </div>
-        <p>
-          The shala is located near Lakshmipuram, Mysuru. Sessions are offered in
-          studio and online. Share a few lines about your goals, and I’ll get
-          back with schedules within 24 hours.
-        </p>
-        <div class="contact-card">
-          <div>
-            <p class="label">Email</p>
-            <a href="mailto:ap.infoyoga@gmail.com">ap.infoyoga@gmail.com</a>
-          </div>
-          <div>
-            <p class="label">Phone / WhatsApp</p>
-            <span class="phone-placeholder"></span>
-          </div>
-          <div>
-            <p class="label">Instagram</p>
-            <a
-              href="https://www.instagram.com/astitvapranayoga"
-              target="_blank"
-              rel="noreferrer"
-              >@astitvapranayoga</a
-            >
+        <div class="contact-content">
+          <p class="eyebrow">Start Today</p>
+          <h2>Ready to Explore Your Practice?</h2>
+          <p>
+            The Shala is located near Lakshmipuram, Mysuru. Sessions are offered
+            in studio and online. Reach out to discuss your goals.
+          </p>
+          <div class="contact-card">
+            <div class="contact-item">
+              <h4>Email</h4>
+              <a href="mailto:ap.infoyoga@gmail.com">ap.infoyoga@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <h4>Instagram</h4>
+              <a
+                href="https://www.instagram.com/astitvapranayoga"
+                target="_blank"
+                >@astitvapranayoga</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -319,84 +368,56 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <div class="footer-brand">
-          <img
-            src="assets/logo_bg_removed.png"
-            alt="Astitva Prana Yoga Shala logo"
-            width="56"
-            height="56"
-          />
-          <span>Astitva Prana Yoga Shala</span>
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="assets/logo_bg_removed.png" alt="Logo" />
+            <span>Astitva Prana Yoga Shala</span>
+          </div>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#offerings">Offerings</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#testimonials">Testimonials</a>
+          </div>
         </div>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#offerings">Offerings</a>
-          <a href="#schedule">Schedule</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> Astitva Prana Yoga Shala · Mysuru</p>
+          <p>Traditional Lineage · Modern Practice</p>
         </div>
-        <p class="footer-meta">
-          © <span id="year"></span> Astitva Prana Yoga Shala · Mysuru
-        </p>
       </div>
     </footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
 
-      (function () {
-        const slider = document.querySelector(".testimonial-slider");
-        const prev = document.querySelector(".testimonial-arrow.prev");
-        const next = document.querySelector(".testimonial-arrow.next");
-        if (!slider || !prev || !next) return;
+      const track = document.querySelector(".testimonial-track");
+      const slides = document.querySelectorAll(".testimonial-card");
+      const nextBtn = document.querySelector(".testimonial-arrow.next");
+      const prevBtn = document.querySelector(".testimonial-arrow.prev");
+      let currentIndex = 0;
 
-        function scrollAmount() {
-          return slider.clientWidth || 0;
-        }
+      function updateSlider() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
 
-        function maxScrollLeft() {
-          return Math.max(slider.scrollWidth - slider.clientWidth, 0);
-        }
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlider();
+      });
 
-        function scrollToNext() {
-          const amount = scrollAmount();
-          const max = maxScrollLeft();
-          let target = slider.scrollLeft + amount;
-          if (target > max - 8) {
-            target = 0;
-          }
-          slider.scrollTo({ left: target, behavior: "smooth" });
-        }
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlider();
+      });
 
-        function scrollToPrev() {
-          const amount = scrollAmount();
-          const max = maxScrollLeft();
-          let target = slider.scrollLeft - amount;
-          if (target < 0) {
-            target = max;
-          }
-          slider.scrollTo({ left: target, behavior: "smooth" });
-        }
-
-        let autoTimer = setInterval(scrollToNext, 9000);
-
-        function resetAuto() {
-          clearInterval(autoTimer);
-          autoTimer = setInterval(scrollToNext, 9000);
-        }
-
-        prev.addEventListener("click", function () {
-          scrollToPrev();
-          resetAuto();
-        });
-
-        next.addEventListener("click", function () {
-          scrollToNext();
-          resetAuto();
-        });
-      })();
+      // Simple Hero Dots Interaction
+      const dots = document.querySelectorAll(".dot");
+      let slideIndex = 0;
+      setInterval(() => {
+        dots.forEach((d) => d.classList.remove("active"));
+        slideIndex = (slideIndex + 1) % dots.length;
+        dots[slideIndex].classList.add("active");
+      }, 5000);
     </script>
   </body>
 </html>
-
